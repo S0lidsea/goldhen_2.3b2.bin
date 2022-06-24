@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest"><head>
+<link rel="shortcut icon" href="favicon.ico">
+<meta charset="utf-8"/>
+<title>PS49.00 Jailbreak V3.0</title>
+<style>
+html, body {
+background-image: url('ps4.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+background-color: #24272b;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+a {
+text-decoration: none;
+}
+.info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: #FFFF00;text-shadow: 4px 4px 4px black;transform: translate(-50%, -50%);}
+</style>
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));setTimeout(function(){window.msgs2.innerHTML="离线缓存加载进度: " + Percent + "%";},500)}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs2.innerHTML="离线缓存加载完成！";},1500);setTimeout(function(){window.msgs2.innerHTML="关闭网络，请重新打开页面！";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<br>
+<h1 id=msgs2 class=info style="font-size: 30px;margin-top: 77px;margin-bottom: 391px;"> 等待... </h1>
+<br>
+</body>
+</html>
