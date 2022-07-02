@@ -84,7 +84,7 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <h1 id=msgs2 style="font-size: 30px;margin-top: 56px;color: #FFFF00;margin-bottom: 412px;"> 正在加载越狱...请稍候 </h1>
 </div>
 <div id="main-section">
-<button class="btn btn-toolbox" onmouseover="msgs.innerHTML='运行游戏和自制软件，启用VR、支持休眠和外置硬盘、UART、支持永久FTP(端口2121)。'" onmouseout="msgs.innerHTML='PS49.00 Jailbreak V3.0 BY:BlurayHG'" onclick=load_goldhen222()><b>黄金Hen2.2.2<b></button>
+<button class="btn btn-toolbox" onmouseover="msgs.innerHTML='运行游戏和自制软件，启用VR、支持休眠和外置硬盘、UART、支持永久FTP(端口2121)。'" onmouseout="msgs.innerHTML='PS49.00 Jailbreak V3.0 BY:BlurayHG'" onclick=load_goldhen()><b>黄金Hen2.3B2<b></button>
 <button class="btn btn-web" onmouseover="msgs.innerHTML='在端口 9020 上加载发送到 PS4 IP 地址的 bin 文件,实现例如金手指等额外的功能。'" onmouseout="msgs.innerHTML='PS49.00 Jailbreak V3.0 BY:BlurayHG'" onclick=load_binloader()><b>Bin加载器<b></button>
 <button class="btn btn-web" onmouseover="msgs.innerHTML='通过伪造升级文件阻止 PS4 系统升级功能。'" onmouseout="msgs.innerHTML='PS49.00 Jailbreak V3.0 BY:BlurayHG'" onclick=load_disableUpdates()><b>屏蔽升级<b></button>
 <button class="btn btn-web" onmouseover="msgs.innerHTML='在系统设置中增加Orbis工具箱菜单，包含多种系统功能。'" onmouseout="msgs.innerHTML='PS49.00 Jailbreak V3.0 BY:BlurayHG'" onclick=load_toolbox()><b>Orbis工具箱<b></button>
@@ -325,9 +325,9 @@ eval.call(window, loadScript('netcat.js')
 +loadScript('relocator.js'));
 }
 
-function load_goldhen222(){
-LoadedMSG = "黄金Hen2.2.2 已加载";
-PLfile = "goldhen_2.2.2.bin";
+function load_goldhen(){
+LoadedMSG = "黄金Hen2.3B2 已加载";
+PLfile = "goldhen_2.3b2.bin";
 load_poc();
 }
 
